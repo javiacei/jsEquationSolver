@@ -1,0 +1,25 @@
+// jsEquationSolver
+// Resuelve sistemas de ecuaciones lineales de cualquier dimensión del tipo Ax = B
+// Parametros de entrada:
+// A                --> A = [ [a11, a12, ..., a1n], ..., [an1, an2, ..., ann] ]
+// B                --> B = [ b1, b2, ..., bn ]
+// W (SOR)          --> W = 1.25 ( [0, 2] )
+// [ Tolerancia ]   --> Tol = 10E-6
+// [ P Inicial ]    --> Pini = [ p1, p2, ..., pn ]
+// [ It. máximas ]  --> MaxIte = 1000
+
+A = [ [ 7, -2, 1, 2 ],
+      [ 2, 8, 3, 1 ],
+      [ -1, 0, 5, 2 ],
+      [ 0, 2, -1, 4 ]
+    ];
+
+B = [ 3, -2, 5, 4 ];
+
+Tol = 10E-6;
+
+Pini = [ 0, -1, 1, 1 ];
+
+MaxIte  = 100;
+
+W = 0.92;
